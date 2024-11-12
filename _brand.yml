@@ -8,6 +8,8 @@ typography:
     - family: Open Sans
     - family: Montserrat
   base: Open Sans
-  headings: Montserrat
+  headings:
+    family: Montserrat
+    weight: 300
   monospace:
     background-color: "#343728"
