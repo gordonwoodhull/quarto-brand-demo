@@ -1,0 +1,13 @@
+color:
+  foreground: "#ccd2b2"
+  background: "#0d0519"
+logo:
+  small: quarto.png
+typography:
+  fonts:
+    - family: Open Sans
+    - family: Montserrat
+  base: Open Sans
+  headings: Montserrat
+  monospace:
+    background-color: "#343728"

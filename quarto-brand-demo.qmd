@@ -1,0 +1,42 @@
+---
+title: brand yml in quarto
+format:
+  html: default
+  typst:
+    include-in-header:
+      text: |
+        #set text(fallback: false, weight: 100)
+    logo:
+      width: 10em
+---
+# Here is a heading
+
+And here is text which contains `some(code)`.
+
+{{< lipsum 1 >}}
+
+## A smaller heading
+
+Here is a larger block of code:
+
+```{r}
+# Function to print the Fibonacci sequence using a loop
+print_fibonacci <- function(n) {
+a <- 0
+b <- 1
+
+cat("Fibonacci Sequence: ")
+for (i in 1:n) {
+	cat(a, " ")
+	next_num <- a + b
+	a <- b
+	b <- next_num
+}
+}
+
+# Example usage
+number_of_terms <- 10
+print_fibonacci(number_of_terms)
+```
+
+{{< lipsum 3 >}}
